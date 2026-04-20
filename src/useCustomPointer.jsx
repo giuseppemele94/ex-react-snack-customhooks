@@ -15,7 +15,7 @@ function useCustomPointer(pointerContent = "🔥") {
 
         //aggiungo l'addEventListener per tracciare i movimenti del mouse 
         document.addEventListener('mousemove', movePointer);
-        
+
         // funzione di cleanup
 
         return () => {
@@ -35,6 +35,7 @@ function useCustomPointer(pointerContent = "🔥") {
                 pointerEvents: "none",
                 zIndex: 9999,
                 fontSize: "2rem",
+               
             }}
         >
             {pointerContent}
